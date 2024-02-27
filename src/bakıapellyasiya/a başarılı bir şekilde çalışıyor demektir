@@ -1,0 +1,21 @@
+[0;1;32m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sat 2021-10-30 21:46:37 UTC; 13s ago
+   Main PID: 13854 (gunicorn)
+      Tasks: 4 (limit: 1136)
+     Memory: 138.3M
+     CGroup: /system.slice/gunicorn.service
+             ├─13854 /home/ferhat/venv/bin/python /home/ferhat/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ferhat/bakiapellyasiya/bakiapellyasiya.sock bakıapellyasiya.wsgi:application
+             ├─13856 /home/ferhat/venv/bin/python /home/ferhat/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ferhat/bakiapellyasiya/bakiapellyasiya.sock bakıapellyasiya.wsgi:application
+             ├─13857 /home/ferhat/venv/bin/python /home/ferhat/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ferhat/bakiapellyasiya/bakiapellyasiya.sock bakıapellyasiya.wsgi:application
+             └─13858 /home/ferhat/venv/bin/python /home/ferhat/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ferhat/bakiapellyasiya/bakiapellyasiya.sock bakıapellyasiya.wsgi:application
+
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net systemd[1]: gunicorn.service: Succeeded.
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net systemd[1]: Stopped gunicorn daemon.
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net systemd[1]: Started gunicorn daemon.
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net gunicorn[13854]: [2021-10-30 21:46:37 +0000] [13854] [INFO] Starting gunicorn 20.1.0
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net gunicorn[13854]: [2021-10-30 21:46:37 +0000] [13854] [INFO] Listening at: unix:/home/ferhat/bakiapellyasiya/bakiapellyasiya.sock (13854)
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net gunicorn[13854]: [2021-10-30 21:46:37 +0000] [13854] [INFO] Using worker: sync
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net gunicorn[13856]: [2021-10-30 21:46:37 +0000] [13856] [INFO] Booting worker with pid: 13856
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net gunicorn[13857]: [2021-10-30 21:46:37 +0000] [13857] [INFO] Booting worker with pid: 13857
+Oct 30 21:46:37 ip-97-74-80-123.ip.secureserver.net gunicorn[13858]: [2021-10-30 21:46:37 +0000] [13858] [INFO] Booting worker with pid: 13858

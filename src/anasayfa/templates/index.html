@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Our Bank</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/"><img src="{% static './images/logo.png' %}" alt="Logo" /></a>
+        </div>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="#">İletişim</a></li>
+          <li><a href="#">Sponsorluk</a></li>
+          <li><a href="#">ATM Noktalarımız</a></li>
+          <li><a href="#">Kurumsal</a></li>
+          <li><a href="#">Kurumsal Makaleler</a></li>
+          <ol>
+            <li><a href="#">Yardım</a></li>
+            <li><a href="#" class="login">GİRİŞ</a></li>
+            <li><a href="#" class="signup">KAYIT OL</a></li>
+            <li class="flag-container">
+              <a href="#"
+                ><img
+                  src="{% static './images/turkey.png' %}"
+                  alt="Türkçe İçin Tıklayınız"
+                  class="flag"
+              /></a>
+              <a href="#"
+                ><img
+                  src="{% static './images/england.png' %}"
+                  alt="Click For English"
+                  class="flag"
+              /></a>
+            </li>
+          </ol>
+        </ul>
+        <i class="fas fa-bars active"></i>
+        <i class="fas fa-times"></i>
+      </nav>
+      <section>
+        <div class="container">
+          <div class="hero-text">
+            <h1>Lorem ipsum dolor</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              tempor enim eu ultricies sollicitudin. Quisque mattis justo eu
+              tristique volutpat.
+            </p>
+            <div class="btn-container">
+              <a href="#">Hemen Başlayın <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="{% static './images/dolar.png' %}" alt="Dolar Sembolü" class="dolar" />
+            <img src="{% static './images/euro.png' %}" alt="Euro Sembolü" class="euro" />
+            <img
+              src="{% static './images/sterlin.png' %}"
+              alt="Sterlin Sembolü"
+              class="sterlin"
+            />
+            <img src="{% static './images/yen.png' %}" alt="Yen Sembolü" class="yen" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <p>
+            En yakındaki ATM’den, anlık kurla düşük komisyonlu ve hızlı işlem
+            yapın.
+          </p>
+          <div class="container card-container">
+            <div class="card">
+              <h2>Biz Kimiz?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                tempor enim eu ultricies sollicitudin. Quisque mattis justo eu
+                tristique volutpat.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Neden ...?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                tempor enim eu ultricies sollicitudin. Quisque mattis justo eu
+                tristique volutpat.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Anında Hizmet</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                tempor enim eu ultricies sollicitudin. Quisque mattis justo eu
+                tristique volutpat.
+              </p>
+            </div>
+          </div>
+          <img src="./images/üçgen-1.png" alt="Üçgen Şekli" class="triangle"/>
+        </div>
+      </section>
+      <section>
+
+        <div class="container third-container">
+          <div class="text-container">
+            <h1>Kartsız İşlem Kolaylığı</h1>
+            <p>Hemen üye olun, işlem yapmaya başlayın.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#">Üye Ol <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="container sml-card-container">
+          <div class="sml-card">
+            <i class="fas fa-user"></i>
+            <p>Ücretsiz Üyelik</p>
+          </div>
+          <div class="sml-card">
+            <i class="fas fa-percentage"></i>
+            <p>Düşük Komisyon</p>
+          </div>
+          <div class="sml-card">
+            <i class="fas fa-qrcode"></i>
+            <p>Kartsız İşlem</p>
+          </div>
+          <div class="sml-card">
+            <i class="fas fa-money-check-alt"></i>
+            <p>Anlık Kur</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>
